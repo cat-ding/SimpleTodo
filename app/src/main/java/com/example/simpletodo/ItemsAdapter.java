@@ -26,7 +26,6 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
     OnClickListener clickListener;
 
     //constructor for ItemsAdapter class
-    //parameters: takes in a list of strings
     public ItemsAdapter(List<String> items, OnLongClickListener longClickListener, OnClickListener clickListener ) {
         this.items = items;
         this.longClickListener = longClickListener;
@@ -69,7 +68,6 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
         }
 
         // Update the view inside the view holder with this data
-        // Paramters: takes in a string
         public void bind(String item) {
             tvItem.setText(item);
             tvItem.setOnClickListener(new View.OnClickListener() {
